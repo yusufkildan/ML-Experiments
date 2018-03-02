@@ -56,6 +56,8 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             return
         }
         
+        // Download Resnet50 model from this website and add to project! : https://developer.apple.com/machine-learning/
+        
         guard let model = try? VNCoreMLModel(for: Resnet50().model) else {
             return
         }
